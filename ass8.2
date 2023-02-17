@@ -1,0 +1,26 @@
+#include<stdio.h>
+main()
+{
+	int i,n,m,e=0,O=0;
+	printf("enter the limit \n");
+	scanf("%d",&n);
+	printf("enter the number to check \n");
+	scanf("%d",&m);
+	for(i=1 ; i<=n ; i++)
+	{
+		if(i%m==0)
+		{
+			printf("\n%d",i);
+		    if(i%2==0)
+		    {
+			   e=e+i;
+		    }
+		    else
+		    {
+			   O=O+i;
+		    }
+		}
+	}
+	printf("\neven sum = %d",e);
+	printf("\nodd sum = %d",O);
+}
