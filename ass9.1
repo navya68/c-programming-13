@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	int i,n,l,e;
+	printf("enter number of values you want\n");
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		scanf("%d",&e);
+		if(i==1)
+			l=e;
+			if(e<l)
+			{
+			 l=e;
+			}
+		i++;
+	}
+	printf("lowest = %d",l);
+}
