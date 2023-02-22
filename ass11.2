@@ -1,0 +1,23 @@
+#include<stdio.h>
+main()
+{
+	int esum=0,osum=0,diff,i,n,num;
+	printf("enter the range\n");
+	scanf("%d",&n);
+	for(i=0 ; i<=n ; i++)
+	{
+		printf("%d",i);
+		if(i%2==0)
+		{
+			esum=esum+i;
+		}
+		else
+		{
+			osum=osum+i;
+		}
+	}
+	printf("\neven number = %d",esum);
+	printf("\nodd sum = %d",osum);
+	diff=osum-esum;
+	printf("\ndifference between odd sum and even sum %d",diff);
+}
