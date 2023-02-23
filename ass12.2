@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+	int i,n,m,count=0;
+	printf("enter the starting range\n");
+	scanf("%d",&m);
+	printf("enter the limit\n");
+	scanf("%d",&n);
+	for(i=m ; i<=n ; i++)
+	{
+		if(i%2!=0)
+		{
+			count++;
+		    if(count!=3)
+		    {
+			   printf("\n%d",i);
+		    }
+		}
+	}
+}
