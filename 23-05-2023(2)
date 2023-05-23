@@ -1,0 +1,26 @@
+#include<stdio.h>
+main()
+{
+	int sum=0,i,n,r,temp;
+	scanf("%d",&n);
+	temp=n;
+	while(n!=0)
+	{
+		r=n%10;
+		int f=1;
+		for(i=1 ; i<=r ; i++)
+		{
+			f=f*i;
+		}
+		sum=sum+f;
+		n=n/10;
+	}
+	if(sum==temp)
+	{
+		printf("\nstrong number");
+	}
+	else
+	{
+		printf("\nNot strong number");
+	}
+}
