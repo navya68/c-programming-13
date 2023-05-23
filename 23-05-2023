@@ -1,0 +1,22 @@
+#include<stdio.h>
+main()
+{
+	int n,i,a;
+	scanf("%d",&n);
+	while(n--)
+	{
+		scanf("%d",&a);
+		if(a<=5)
+		{
+			printf("Baby age\n");
+		}
+		else if(a>5 && a<=25)
+		{
+			printf("student age\n");
+		}
+		else
+		{
+			printf("Adult age\n");
+		}
+	}
+}
