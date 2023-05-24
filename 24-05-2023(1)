@@ -1,0 +1,26 @@
+#include<stdio.h>
+main()
+{
+	int a[10],se,i,n,c=0;
+	printf("enter the range\n");
+	scanf("%d",&n);
+	printf("enter the elements\n");
+	for(i=0 ; i<n ; i++)
+	{
+		scanf("%D",&a[i]);
+	}
+	for(i=0 ; i<n ; i++)
+	{
+		printf("\n%d",a[i]);
+	}
+	printf("\nEnter the required element:");
+	scanf("%d",&se);
+	for(i=0 ; i<n ; i++)
+	{
+		if(se==a[i])
+		{
+			c++;
+		}
+	}
+	printf("frequency of the element is :%d",c);
+}
