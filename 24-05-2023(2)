@@ -1,0 +1,47 @@
+//merging two array's
+#include<stdio.h>
+main()
+{
+	int a[100],b[100],c[100],ind=0,c1=0,c2=0,n,i,j,k,m,l,r;
+	printf("enter the range of a :");
+	scanf("%d",&n);
+	printf("enter the elements of a\n");
+	for(i=0 ; i<n ; i++)
+	{
+		scanf("%d",&a[i]);
+		c1++;
+	}
+	printf("enter the range of b:");
+	scanf("%d",&r);
+	printf("enter the elements of b\n");
+	for(i=0 ; i<r ; i++)
+	{
+		scanf("%d",&b[i]);
+		c2++;
+	}
+	printf("the elements of a are\n");
+	for(i=0 ; i<n ;i++)
+	{
+		printf("\n%d",a[i]);
+	}
+	printf("\nthe elements of b are\n");
+	for(j=0 ; j<r ;j++)
+	{
+		printf("\n%d",b[j]);
+	}
+	m=c1+c2;
+	for(i=0,k=0 ; i<m-r,k<n ; i++,k++)           
+	{ 
+        c[i]=a[k];
+		ind++;
+	}
+	for(i=ind++,j=0  ; i<m,j<r ; i++,j++)
+	{
+		c[i]=b[j];
+	}
+	printf("\nthe merged array is : ");
+	for(i=0 ; i<m ; i++)
+	{
+		printf("\n%d",c[i]);
+	}
+}
